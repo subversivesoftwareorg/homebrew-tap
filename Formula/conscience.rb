@@ -1,21 +1,21 @@
 class Conscience < Formula
   desc "Evaluate the impact of AI-assisted work"
   homepage "https://github.com/subversivesoftwareorg/conscience"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/subversivesoftwareorg/conscience/releases/download/v0.6.0/conscience-macos-arm64"
-    sha256 "0bfea5f8beef52d69a60f3ba7a59829b59a43b4b2d8cc8cb90d714c0137e625e"
+    url "https://github.com/subversivesoftwareorg/conscience/releases/download/v0.6.1/conscience-macos-arm64"
+    sha256 "7e5eb4915a4816ade42c83a380cd572d23946e771659f8b2d087535ad961aa05"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/subversivesoftwareorg/conscience/releases/download/v0.6.0/conscience-linux-arm64"
-    sha256 "39f25ae0c4d5dfe99cd582b61ed97c263b0b51bee061ea90e33449b2769cae3f"
+    url "https://github.com/subversivesoftwareorg/conscience/releases/download/v0.6.1/conscience-linux-arm64"
+    sha256 "4cafa3923b94fa9a904227c490e0b2005f626098283948765e5464b4f69b3203"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/subversivesoftwareorg/conscience/releases/download/v0.6.0/conscience-linux-amd64"
-    sha256 "88741795277aa08136ed23aa27978a15a2e2cb12f9f8ec50299c5f64b8d5eb46"
+    url "https://github.com/subversivesoftwareorg/conscience/releases/download/v0.6.1/conscience-linux-amd64"
+    sha256 "a9b8d6b5524eb77553a9b6e102655660da4b51fa6b8b55b83197336045e630c8"
   else
-    url "https://github.com/subversivesoftwareorg/conscience/archive/refs/tags/v0.6.0.tar.gz"
-    sha256 "a0cff6094dbce4294fd664d7d51ff6cdfaf27c8504830302bbc62889236af4dd"
+    url "https://github.com/subversivesoftwareorg/conscience/archive/refs/tags/v0.6.1.tar.gz"
+    sha256 "da84ed3414957bfb1cddc8ae4394cbedc7239d70a1ad30aa26cc4dc976696c4f"
     depends_on "rust" => :build
   end
 
